@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Profile Search</title>
+    <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/0267d3da52.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- wrapper  -->
+    <div class="wrapper">
+        <div class="heading">
+            <h1>Find Github Profile</h1>
+            <div class="darkmode-icons" id="darkmode">
+                <i class="fa-solid fa-moon moon" id="moon"></i>
+                <i class="fa-solid fa-sun sun" id="sun"></i>
+            </div>
+        </div>
+        <!-- search bar -->
+        <div class="search-bar">
+            <input type="text" name="" id="input" placeholder="Enter a github profile " autocomplete="off">
+            <div class="search-glass"><i class="fa-solid fa-magnifying-glass" ></i></div>
+            <button id="btn">Search</button>
+        </div>
+
+        <!-- profile info -->
+        <div class="profile-info-container">
+            <div class="avatar"><img src="images/myavatar.jpeg" alt="" class="avatar-img" width="100px" height="100px" style="border-radius: 100%; ;"></div>
+            <div class="rest-of-info">
+                <div class="user">
+                    <div class="user-top">
+                        <h2 class="user-id" id="user-id"></h2>
+                        <p class="joined-date"></p>
+                    </div>
+                    <a href="" id="profile-link" target="_blank"></a>
+                </div>
+                <div class="bio"></div>
+                <!-- repos and folllowings -->
+                <div class="followings">
+                    <div class="repos">
+                        <div class="repo followings-div-heading">Repos</div>
+                        <h3 class="repo-number"></h3>
+                    </div>
+                    <div class="repos">
+                        <div class="followers followings-div-heading">Followers</div>
+                        <h3 class="follower-number"></h3>
+                    </div>
+                    <div class="repos">
+                        <div class="repo followings-div-heading">Followings</div>
+                        <h3 class="followings-number"></h3>
+                    </div>
+                </div>
+                  <!-- links -->
+                  <div class="links">
+                    <div class="link-div">
+                        <div  class="links-a" style="display: flex;"><i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i><p id="location"></p></div>
+                        <div   class="links-a" style="display: flex;"><i class="fa-solid fa-link" style="margin-right: 5px;"></i><p><a href="" id="github-link" target="_blank"></a></p></div>
+                    </div>
+                    <div class="link-div">
+                        <div  class="links-a" style="display: flex;"><i class="fa-brands fa-twitter" style="margin-right: 5px;"></i><p id="twitter"></p></div>
+                        <div  class="links-a" style="display: flex;"><i class="fa-regular fa-building" style="margin-right: 5px;"></i><p id="company"></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ><img src='https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-1932.jpg?w=2000' alt=""class="error-img"></div>
+    </div>
+    
+</body>
+</html>
